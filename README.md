@@ -12,7 +12,7 @@ MetalName Generator is a Go-based application that generates random staff names 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/riot-rmarin/metalname.git
+   git clone https://github.com/rodfmarin/metalname
    cd metalname
 
 2. Build the application:
