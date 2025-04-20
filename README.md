@@ -14,3 +14,13 @@ MetalName Generator is a Go-based application that generates random staff names 
    ```bash
    git clone https://github.com/riot-rmarin/metalname.git
    cd metalname
+
+2. Build the application:
+   ```bash
+    go build -o metalname
+    ```
+3. Run the application:
+   ```bash
+    ./metalname
+   > Staff Name: randomized snake
+    ```
