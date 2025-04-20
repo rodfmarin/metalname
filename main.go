@@ -3,24 +3,16 @@ package main
 import (
 	"fmt"
 
-	"metalname/constants"
 	"metalname/random"
 )
 
 func main() {
-	// Create a name loader
-	loader := constants.NewLoader()
-	err := loader.LoadNames()
+	// Create a random name generator
+	nameGenerator, err := random.NewName()
+	name, err := nameGenerator.Name()
 	if err != nil {
-		panic(err)
+		fmt.Printf("Failed to generate name: %v", err)
 	}
-	// Create a randomizer
-	r := random.NewNumber(len(loader.FirstNames))
-	r2 := random.NewNumber(len(loader.LastNames))
 
-	randFirst := r.RandInt()
-	randLast := r2.RandInt()
-
-	fmt.Printf("Staff Name: %s %s", loader.FirstNames[randFirst], loader.LastNames[randLast])
-
+	fmt.Printf("Staff Name: %s", name)
 }
