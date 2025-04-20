@@ -1,0 +1,26 @@
+# Binaries
+*.exe
+*.o
+
+# Build artifacts
+bin/
+pkg/
+
+# Dependencies (Go modules)
+/vendor/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test cache
+__test_cache__/
+
+# Coverage files
+*.out
+*.cov
+
+# Miscellaneous
+.DS_Store
