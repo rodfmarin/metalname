@@ -6,5 +6,6 @@ type Name struct {
 	LastName  string
 }
 
-type FirstName string
-type LastName string
+func (n Name) String() string {
+	return n.FirstName + " " + n.LastName
+} 
